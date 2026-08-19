@@ -1,0 +1,7 @@
+interface:
+  display_name: "医学 PPT 题库生成与核对"
+  short_description: "从材料生成或核对医学培训题，答案严格可追溯"
+  default_prompt: "使用 $medical-ppt-question-bank 从医学 PPT 生成或核对单选、多选和判断题，并为每题提供页码依据。"
+
+policy:
+  allow_implicit_invocation: true
