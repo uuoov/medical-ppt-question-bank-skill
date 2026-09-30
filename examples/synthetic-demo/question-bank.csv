@@ -1,0 +1,11 @@
+﻿题号,题型,题目,选项内容,标准答案,解析,PPT页码,PPT依据
+1,单选题,Drug A 对应的适应症是？,"A. Condition X
+B. Condition Y
+C. Condition Z
+D. Condition W",A（Condition X）,虚构来源明确给出适应症为 Condition X。,1,Drug A is indicated for Condition X.
+2,多选题,Drug A 的给药方案包含哪些描述？,"A. 100 mg 每日一次
+B. 口服
+C. 每周一次
+D. 静脉给药",AB（100 mg 每日一次；口服）,来源同时给出每日一次 100 mg 和口服；未给出每周一次或静脉给药。,2,The recommended dose of Drug A is 100 mg once daily. Drug A is taken orally.
+3,判断题,Study Alpha 的应答率为 60%。,"A. 正确
+B. 错误",A（正确）,虚构来源给出的应答率为 60%。,3,"In Study Alpha, the response rate was 60%."

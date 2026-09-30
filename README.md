@@ -8,6 +8,8 @@
 - 强制答案、解析和证据仅来自指定材料，并标注页码；
 - 面向医药企业市场同事，优先覆盖产品、靶点、适应症、用法用量、疗效、安全性、指南和竞争格局等知识点。
 
+![题库生成流程示意图](./docs/assets/workflow-hero.png)
+
 ## 工作流
 
 ```mermaid
@@ -40,6 +42,16 @@ flowchart LR
 >
 > 标准答案：B  
 > 依据：虚构材料中的 “100 mg once daily”。
+
+## 完整虚构示例
+
+[examples/synthetic-demo](./examples/synthetic-demo/README.md) 提供三页虚构来源、单选 / 多选 / 判断各一题及可下载的 CSV。每题均绑定页码和原文证据。
+
+```bash
+python skills/medical-ppt-question-bank/scripts/validate_question_bank_csv.py examples/synthetic-demo/question-bank.csv --single 1 --multiple 1 --true-false 1 --expected-total 3
+```
+
+这个命令验证列结构、题量、题型、选项和答案字母；事实一致性还需要对照来源核对。示例是人工编写的格式演示，不代表一次真实医学任务或模型运行记录。
 
 ## 安装
 
@@ -95,3 +107,7 @@ PPT：[文件路径或链接]
 3. 输出位置。
 
 如果连来源材料也没有，就无法满足“答案完全来自 PPT 且可追溯”的要求，Skill 会先要求补充材料。
+
+## Author
+
+**Leo Leung** · Biomedical Engineering · Embedded Systems · AI Tools
