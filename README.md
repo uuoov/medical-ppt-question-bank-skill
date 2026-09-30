@@ -17,7 +17,7 @@
 https://github.com/uuoov/medical-ppt-question-bank-skill/tree/main/skills/medical-ppt-question-bank
 ```
 
-本仓库默认是私有仓库。使用者需要先获得仓库访问权限，并在本机登录对应 GitHub 账号。安装后如果没有立即显示该 Skill，请重启 Codex。
+本仓库为公开仓库，可直接通过上述 GitHub 地址安装。Skill 不包含访问令牌、cookie、账号凭据或具体企业/课堂材料；涉及真实项目资料时，请仅在具备相应授权的环境中使用。安装后如果没有立即显示该 Skill，请重启 Codex。
 
 ## 从零出题 Prompt
 
