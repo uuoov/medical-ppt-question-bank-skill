@@ -8,6 +8,39 @@
 - 强制答案、解析和证据仅来自指定材料，并标注页码；
 - 面向医药企业市场同事，优先覆盖产品、靶点、适应症、用法用量、疗效、安全性、指南和竞争格局等知识点。
 
+## 工作流
+
+```mermaid
+flowchart LR
+  A["PPT / PDF / 飞书幻灯片"] --> B["提取可核对证据"]
+  B --> C["生成题目"]
+  C --> D["答案与解析校验"]
+  D --> E["页码 / 原文证据绑定"]
+  E --> F["Excel / CSV / 飞书表格"]
+```
+
+核心原则是 **evidence-grounded**：答案、解析和依据只来自指定材料；证据不足时不凭常识补全。
+
+## Synthetic Demo
+
+下面示例完全使用虚构内容，仅用于说明输出格式，不对应任何真实药品、企业培训材料或内部数据。
+
+**虚构材料摘录**
+
+> Drug A is indicated for Condition X. The recommended dose is 100 mg once daily. In Study Alpha, the response rate was 60%.
+
+**示例单选题**
+
+> Drug A 的推荐给药方案是？
+>
+> A. 50 mg 每日一次  
+> B. 100 mg 每日一次  
+> C. 100 mg 每日两次  
+> D. 200 mg 每周一次
+>
+> 标准答案：B  
+> 依据：虚构材料中的 “100 mg once daily”。
+
 ## 安装
 
 在 Codex 中发送：
